@@ -2,14 +2,21 @@
 <html>
 <head>
 
-    <script>
-    window.alert("Hello World")
-    </script>
+   
 </head>
     
 <body>
+ 
+    <span id= "demo">
 
-    <h1>Javascript - Hello World</h1>
+    </span>
+     <script>
+    window.addEventListener('load',myfirst,false);
+         function myfirst(){
+             window.alert("Hello World using an Event Listener");
+             document.getElementById("demo").innerHTML = "Hello World";
+         }
+    </script>
 </body>
       
 </html>
